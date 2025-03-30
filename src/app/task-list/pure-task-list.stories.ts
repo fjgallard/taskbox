@@ -20,7 +20,7 @@ const meta: Meta<PureTaskListComponent> = {
     }),
     //👇 Wraps our stories with a decorator
     componentWrapperDecorator(
-      (story) => `<div style="margin: 3em">${story}</div>`
+      (story) => `<div style="margin: 3.25em">${story}</div>`
     ),
   ],
   args: {
