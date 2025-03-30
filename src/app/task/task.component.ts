@@ -1,9 +1,11 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Task } from '../models/task.model';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-task',
-  standalone: false,
+  standalone: true,
+  imports: [CommonModule],
   template: `
     <div class="list-item {{ task?.state }}">
       <label
